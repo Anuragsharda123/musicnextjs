@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/TestimonialCards";
 import UpComingWebinars from "@/components/UpComingWebinars";
 import Instructors from "@/components/Instructors";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <MusicSchoolTestimonials />
     <UpComingWebinars />
     <Instructors />
+    <Footer />
   </main>
       );
 }
