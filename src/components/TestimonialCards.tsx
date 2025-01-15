@@ -2,8 +2,9 @@
 import React from 'react'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 import { Boxes } from './ui/background-boxes';
+import { NextPage } from 'next';
 
-const  MusicSchoolTestimonials:React.FC = () => {
+const  MusicSchoolTestimonials:NextPage = () => {
 
     const musicSchoolTestimonials = [
         {

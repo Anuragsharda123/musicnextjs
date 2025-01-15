@@ -3,6 +3,7 @@ import React from 'react';
 import courseData from '@/data/music_courses.json';
 import Link from 'next/link';
 import { BackgroundGradient } from './ui/background-gradient';
+import { NextPage } from 'next';
 
 interface Course{
     id: number,
@@ -15,7 +16,7 @@ interface Course{
     image: string
 }
 
-const FeaturedCourses:React.FC = () => {
+const FeaturedCourses:NextPage = () => {
 
     const featuredCourses = courseData.courses.filter((course:Course)=> course.isFeatured);
 
@@ -29,7 +30,6 @@ const FeaturedCourses:React.FC = () => {
         <div className='mt-10 mx-4' >
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center' >
                 {featuredCourses.map((course:Course)=>(
-                    <>
                     <div key={course.id} className="flex justify-center">
                         <BackgroundGradient className='flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm ' >
                             <div className='p-4 sm:p-6 flex flex-col items-center text-center flex-grow' >
@@ -39,7 +39,6 @@ const FeaturedCourses:React.FC = () => {
                             </div>
                         </BackgroundGradient>
                     </div>
-                    </>
                 ))}
             </div>
         </div>

@@ -2,8 +2,9 @@
 import React from 'react';
 import { WavyBackground } from './ui/wavy-background';
 import { AnimatedTooltip } from './ui/animated-tooltip';
+import { NextPage } from 'next';
 
-const Instructors = () => {
+const Instructors:NextPage = () => {
 
     const instructors = [
         {

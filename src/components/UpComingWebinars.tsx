@@ -3,8 +3,9 @@
 import Link from 'next/link'
 import React from 'react'
 import { HoverEffect } from './ui/card-hover-effect';
+import { NextPage } from 'next';
 
-const UpComingWebinars = () => {
+const UpComingWebinars:NextPage = () => {
 
     const featuredWebinars = [
         {

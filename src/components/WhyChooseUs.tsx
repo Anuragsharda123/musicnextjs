@@ -1,8 +1,9 @@
 'use client';
 import React from 'react'
 import { StickyScroll } from './ui/sticky-scroll-reveal';
+import { NextPage } from 'next';
 
-const WhyChooseUs:React.FC = () => {
+const WhyChooseUs:NextPage = () => {
 
     const musicSchoolContent = [
         {
